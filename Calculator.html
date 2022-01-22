@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Calculator</title>
+</head>
+<style type="text/css"> 
+	#cal{
+ border-radius: 25px;
+  background: #000;
+  padding: 20px;
+ margin: 320px;
+	}
+	#cal input
+	{
+		 border-radius: 50%;
+	}
+</style>
+//hi my name is khushi
+<script type="text/javascript">
+	// This function clear all the values
+function clearScreen() {
+ document.getElementById("result").value = "";
+}
+
+// This function display values
+function display(value) {
+ document.getElementById("result").value += value;
+}
+// This function evaluates the expression and return result
+function calculate() {
+ var p = document.getElementById("result").value;
+ var q = eval(p);
+ document.getElementById("result").value = q;
+}
+	</script>
+<body>
+	<center>
+	<div id="cal">
+		
+<form>
+	<input id="result" type="text" name="text" style="padding-top: 11px; border-radius: 20px; margin-bottom: 4px  disabled/"><br> 
+
+	<input type="button" name="clear" value="AC" onclick="clearScreen()" style="padding-top: 10px; padding-bottom: 10px; width: 36px;">
+
+	<input type="button" name="negative" value="&pm;" onclick = "display('-')" style="padding-top: 10px; padding-bottom: 10px; width: 36px;">
+
+	<input type="button" name="percentage" value="%" onclick = "display('%')" style="padding-top: 10px; padding-bottom: 10px; width: 36px;">
+
+	<input type="button" name="divide" value="&#247;" onclick = "display('/')" style="padding-top: 10px; padding-bottom: 10px; width: 36px; background-color: #F99409 ; color: white;"><br>
+
+	<input type="button" name="num7" value="7" onclick = "display('7')" style="padding-top: 10px; padding-bottom: 10px; width: 36px; color: white; background-color: #736F6B;">
+
+	<input type="button" name="num8" value="8" onclick = "display('8')" style="padding-top: 10px; padding-bottom: 10px; width: 36px; color: white; background-color: #736F6B;">
+
+	<input type="button" name="num9" value="9" onclick = "display('9')" style="padding-top: 10px; padding-bottom: 10px; width: 36px; color: white; background-color: #736F6B;">
+
+	<input type="button" name="multiply" value="x" onclick = "display('x')" style="padding-top: 10px; padding-bottom: 10px; width: 36px; background-color: #F99409; color: white;"><br>
+
+	<input type="button" name="num4" value="4" onclick = "display('4')" style="padding-top: 10px; padding-bottom: 10px; width: 36px; color: white; background-color: #736F6B;">
+ 
+	<input type="button" name="num5" value="5" onclick = "display('5')" style="padding-top: 10px; padding-bottom: 10px; width: 36px; color: white; background-color: #736F6B;">
+
+	<input type="button" name="num6" value="6" onclick = "display('6')" style="padding-top: 10px; padding-bottom: 10px; width: 36px; color: white; background-color: #736F6B;">
+
+	<input type="button" name="minus" value="-" onclick = "display('-')" style="padding-top: 10px; padding-bottom: 10px; width: 36px; background-color: #F99409; color: white; "><br>
+
+	<input type="button" name="num1" value="1" onclick = "display('1')" style="padding-top: 10px; padding-bottom: 10px; width: 36px; color: white; background-color: #736F6B;">
+
+	<input type="button" name="num2" value="2" onclick = "display('2')" style="padding-top: 10px; padding-bottom: 10px; width: 36px; color: white; background-color: #736F6B;">
+
+	<input type="button" name="num3" value="3" onclick = "display('3')" style="padding-top: 10px; padding-bottom: 10px; width: 36px; color: white; background-color: #736F6B;">	
+
+	<input type="button" name="plus" value="+" onclick = "display('+')" style="padding-top: 10px; padding-bottom: 10px; width: 36px; background-color: #F99409; color: white;"><br>
+
+	<input type="button" name="num0" value="0" onclick = "display('0')" style="padding-top: 10px; padding-bottom: 10px; width: 76px; border-radius: 20px; text-align: left; padding-left: 12px; color: white; background-color: #736F6B;">
+
+	<input type="button" name="decimal" value="." onclick = "display('.')" style="padding-top: 10px; padding-bottom: 10px; width: 36px; color: white; background-color: #736F6B;">
+
+	<input type="button" name="equalsto" value="=" onclick="calculate()" style="padding-top: 10px; padding-bottom: 10px; width: 36px; background-color: #F99409; color: white;">
+
+</form>
+	</div>
+	</center>
+
+</body>
+</html>
