@@ -10,13 +10,14 @@
  border-radius: 25px;
   background: #000;
   padding: 20px;
- margin: 320px;
+ display: inline-block;
 	}
 	#cal input
 	{
 		 border-radius: 50%;
 	}
 </style>
+
 <script type="text/javascript">
 	// This function clear all the values
 function clearScreen() {
@@ -34,13 +35,14 @@ function calculate() {
  document.getElementById("result").value = q;
 }
 	</script>
+	
 <body>
 
 	<center>
 	<div id="cal">
 		
 <form>
-	<input id="result" type="text" name="text" style="padding-top: 11px; border-radius: 20px; margin-bottom: 4px  disabled/"><br> 
+	<input id="result" type="text" name="text" style="padding-top: 11px; display: inline-block; border-radius: 20px; margin-bottom: 4px  disabled/"><br> 
 
 	<input type="button" name="clear" value="AC" onclick="clearScreen()" style="padding-top: 10px; padding-bottom: 10px; width: 36px;">
 
@@ -56,7 +58,7 @@ function calculate() {
 
 	<input type="button" name="num9" value="9" onclick = "display('9')" style="padding-top: 10px; padding-bottom: 10px; width: 36px; color: white; background-color: #736F6B;">
 
-	<input type="button" name="multiply" value="x" onclick = "display('x')" style="padding-top: 10px; padding-bottom: 10px; width: 36px; background-color: #F99409; color: white;"><br>
+	<input type="button" name="multiply" value="x" onclick = "display('*')" style="padding-top: 10px; padding-bottom: 10px; width: 36px; background-color: #F99409; color: white;"><br>
 
 	<input type="button" name="num4" value="4" onclick = "display('4')" style="padding-top: 10px; padding-bottom: 10px; width: 36px; color: white; background-color: #736F6B;">
  
